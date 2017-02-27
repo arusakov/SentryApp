@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "target": "es2015",
+    "module": "es2015",
+    "jsx": "react-native",
+    "lib": [
+      "dom", // only for react definitions
+      "es2015"
+    ]
+  }
+}
