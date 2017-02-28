@@ -6,6 +6,8 @@ import {
   View,
 } from 'react-native'
 
+import { CENTER } from './styles'
+
 export class SentryApp extends React.Component<void, void> {
   render() {
     return (
@@ -25,24 +27,22 @@ export class SentryApp extends React.Component<void, void> {
   }
 }
 
-const STYLE_CENTER: 'center' = 'center'
-
 const styles = StyleSheet.create({
   container: {
-    alignItems: STYLE_CENTER,
+    alignItems: CENTER,
     backgroundColor: '#F5FCFF',
     flex: 1,
-    justifyContent: STYLE_CENTER,
+    justifyContent: CENTER,
   },
   instructions: {
     color: '#333333',
     marginBottom: 5,
-    textAlign: STYLE_CENTER,
+    textAlign: CENTER,
   },
   welcome: {
     fontSize: 20,
     margin: 10,
-    textAlign: STYLE_CENTER,
+    textAlign: CENTER,
   },
 })
 
