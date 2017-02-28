@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import * as React from 'react'
 import {
   AppRegistry,
   StyleSheet,
@@ -8,12 +8,12 @@ import {
 
 import { CENTER } from './styles'
 
-export class SentryApp extends Component<void, void> {
+export class SentryApp extends React.Component<void, void> {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Welcome to React Native!!!4
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.ios.js

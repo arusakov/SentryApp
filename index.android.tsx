@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import * as React from 'react'
 import {
   AppRegistry,
   StyleSheet,
@@ -6,7 +6,7 @@ import {
   View,
 } from 'react-native'
 
-export class SentryApp extends Component<void, void> {
+export class SentryApp extends React.Component<void, void> {
   render() {
     return (
       <View style={styles.container}>
