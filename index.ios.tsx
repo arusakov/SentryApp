@@ -7,8 +7,23 @@ import {
 } from 'react-native'
 
 import { CENTER } from './styles'
+import { getList } from './api'
 
-export class SentryApp extends React.Component<void, void> {
+export class SentryApp extends React.Component<void, { count: number }> {
+
+  state = {
+    count: 0,
+  }
+
+  constructor(props: void , ctx: void) {
+    super(props, ctx)
+    getList('projects').subscribe(
+      (projects) => {
+        this.setState({ count: projects.length })
+      },
+    )
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -21,6 +36,9 @@ export class SentryApp extends React.Component<void, void> {
         <Text style={styles.instructions}>
           Press Cmd+R to reload,{'\n'}
           Cmd+D or shake for dev menu
+        </Text>
+        <Text style={styles.instructions}>
+          Projects count: {this.state.count}
         </Text>
       </View>
     )

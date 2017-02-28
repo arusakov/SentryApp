@@ -7,8 +7,16 @@ import {
 } from 'react-native'
 
 import { CENTER } from './styles'
+import { getList } from './api'
 
-export class SentryApp extends React.Component<void, void> {
+export class SentryApp extends React.Component<void, { count: number }> {
+
+  constructor(props: void , ctx: void) {
+    super(props, ctx)
+
+    getList('projects')
+  }
+
   render() {
     return (
       <View style={styles.container}>
