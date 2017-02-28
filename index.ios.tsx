@@ -8,6 +8,7 @@ import {
 
 import { CENTER } from './styles'
 import { getList } from './api'
+import { EventCmp } from './components/EventCmp'
 
 export class SentryApp extends React.Component<void, { count: number }> {
 
@@ -40,6 +41,7 @@ export class SentryApp extends React.Component<void, { count: number }> {
         <Text style={styles.instructions}>
           Projects count: {this.state.count}
         </Text>
+        <EventCmp />
       </View>
     )
   }
@@ -47,10 +49,10 @@ export class SentryApp extends React.Component<void, { count: number }> {
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: CENTER,
+    // alignItems: CENTER,
     backgroundColor: '#F5FCFF',
     flex: 1,
-    justifyContent: CENTER,
+    // justifyContent: CENTER,
   },
   instructions: {
     color: '#333333',
