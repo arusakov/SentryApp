@@ -8,7 +8,7 @@ function getBearer(sid: string) {
   return 'Bearer ' + sid
 }
 
-const TOKEN = 'TOKEN'
+const TOKEN = 'ec73867b0d784226970e107fa6d68ee26b99311bbbf543a9b1d3fd3f62ddaf98'
 
 export function getList(items: 'projects'): Observable<Sentry.Project[]>
 export function getList(items: string) {

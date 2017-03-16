@@ -1,19 +1,28 @@
 import * as React from 'react'
 import {
   AppRegistry,
+  Linking,
   StyleSheet,
   Text,
+  TextInput,
   View,
+  Button,
 } from 'react-native'
 
 import { CENTER } from './styles'
 import { getList } from './api'
 import { EventCmp } from './components/EventCmp'
 
-export class SentryApp extends React.Component<void, { count: number }> {
+type LoginState = {
+  count: number,
+  token: string,
+}
+
+export class SentryApp extends React.Component<void, LoginState> {
 
   state = {
     count: 0,
+    token: '',
   }
 
   constructor(props: void , ctx: void) {
@@ -42,6 +51,22 @@ export class SentryApp extends React.Component<void, { count: number }> {
           Projects count: {this.state.count}
         </Text>
         <EventCmp />
+        <TextInput
+          // autoFocus
+          multiline
+          placeholder={'Sentry API token'}
+          value={this.state.token}
+          style={{height: 40, fontSize: 20}}
+          onChangeText={(token) => {
+            this.setState({ token: token.replace(/\s/g, '') })
+          }}
+          />
+        <Button title='Login' onPress={() => {
+
+        }} />
+        <Button title='Sentry Auth Token' onPress={() => {
+          Linking.openURL('https://sentry.io/api/')
+        }} />
       </View>
     )
   }
