@@ -2,15 +2,19 @@
 # yarn lockfile v1
 
 
-"@types/react-native@0.37.13":
-  version "0.37.13"
-  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.37.13.tgz#65548f892ed6e55ef87add1ffeec72275b4152b7"
+"@types/react-native@0.42.6":
+  version "0.42.6"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.42.6.tgz#b277a7c74a9528e09b9360ac540e4a56c4f1fadf"
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@15.0.13":
+"@types/react@*":
   version "15.0.13"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-15.0.13.tgz#7031530b0d1b77941551cda06e5b56b704505f12"
+
+"@types/react@15.0.16":
+  version "15.0.16"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-15.0.16.tgz#78e39511a9cfcabf7f74ecd55180522f4290a0c1"
 
 abab@^1.0.3:
   version "1.0.3"
@@ -3433,7 +3437,7 @@ rx-lite@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/rx-lite/-/rx-lite-3.1.2.tgz#19ce502ca572665f3b647b10939f97fd1615f102"
 
-rxjs@^5.2.0:
+rxjs@5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.2.0.tgz#db537de8767c05fa73721587a29e0085307d318b"
   dependencies:
@@ -3799,9 +3803,9 @@ trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
 
-tslint@4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/tslint/-/tslint-4.5.0.tgz#12b384a339d456ee1d3cc665f13f4e759bbe5d64"
+tslint@4.5.1:
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/tslint/-/tslint-4.5.1.tgz#05356871bef23a434906734006fc188336ba824b"
   dependencies:
     babel-code-frame "^6.20.0"
     colors "^1.1.2"

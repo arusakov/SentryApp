@@ -8,12 +8,14 @@ function getBearer(sid: string) {
   return 'Bearer ' + sid
 }
 
+const TOKEN = 'TOKEN'
+
 export function getList(items: 'projects'): Observable<Sentry.Project[]>
 export function getList(items: string) {
   return Observable
     .ajax({
       headers: {
-        Authorization: getBearer('<TOKEN>'),
+        Authorization: getBearer(TOKEN),
       },
       url: Sentry.URL_PREFIX + '/' + items + '/',
     })

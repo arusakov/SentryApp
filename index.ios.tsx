@@ -66,4 +66,4 @@ const styles = StyleSheet.create({
   },
 })
 
-AppRegistry.registerComponent('SentryApp', () => SentryApp)
+AppRegistry.registerComponent('sentryapp', () => SentryApp)
